@@ -26,7 +26,7 @@
 .presets__card {
   position: relative;
   height: 60vh;
-  margin-bottom: var(--space-lg);
+  margin-bottom: 10rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
