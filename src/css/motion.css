@@ -1,0 +1,76 @@
+.header__logo-motion {
+  position: fixed;
+  width: 100%;
+  height: 110px;
+  z-index: 3;
+}
+
+.presets {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100px);
+  z-index: 3;
+  color: #fff;
+}
+
+.presets__header {
+  margin-bottom: 4rem;
+}
+
+.presets__card {
+  position: relative;
+  height: 60vh;
+  margin-bottom: var(--space-lg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.presets__title {
+  width: 100%;
+  justify-self: flex-end;
+}
+.presets__description {
+}
+.presets__video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.presets__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Media Queries =============================== */
+@media only screen and (min-width: 426px) {
+  .presets {
+    padding: 0 3rem;
+  }
+  .presets__card {
+    height: 80vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .presets {
+    padding: 0 3rem;
+  }
+  .presets__card {
+    height: 100vh;
+  }
+}

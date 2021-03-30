@@ -1,0 +1,88 @@
+.portfolio-categories {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  transform: translateY(140px);
+  z-index: 3;
+}
+
+.categorie {
+  margin-right: 1rem;
+  text-transform: uppercase;
+  color: #ffffff80;
+}
+
+#gallery {
+  position: relative;
+  margin-top: 15rem;
+  padding: 0 1rem;
+  z-index: 3;
+}
+
+#gallery img::before {
+  content: "\f06e";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  opacity: 0;
+}
+
+#gallery img:hover::before {
+  opacity: 1;
+}
+
+/*Custom Lightbox  */
+.ug-lightbox .ug-lightbox-button-close {
+  background-image: none;
+}
+
+.ug-lightbox .ug-lightbox-button-close::before {
+  content: "CLOSE";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: -35px;
+  letter-spacing: 0.2rem;
+  color: #fff;
+}
+
+.ug-lightbox .ug-lightbox-arrow-left,
+.ug-lightbox .ug-lightbox-arrow-right {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.ug-lightbox .ug-lightbox-arrow-left {
+  background: #252525 url("../img/left-arrow.svg") center center no-repeat;
+  background-size: 30px;
+}
+
+.ug-lightbox .ug-lightbox-arrow-right {
+  background: #252525 url("../img/right-arrow.svg") center center no-repeat;
+  background-size: 30px;
+}
+
+.ug-lightbox .ug-lightbox-arrow-left:hover,
+.ug-lightbox .ug-lightbox-arrow-right:hover {
+  background-position: center;
+}
+
+@media only screen and (max-width: 426px) {
+  .ug-lightbox .ug-lightbox-arrow-left,
+  .ug-lightbox .ug-lightbox-arrow-right {
+    background: none;
+  }
+}

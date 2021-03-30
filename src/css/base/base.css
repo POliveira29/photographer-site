@@ -1,0 +1,53 @@
+:root {
+  /*Spacing*/
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space: 24px;
+  --space-md: 32px;
+  --space-lg: 48px;
+  --space-xlg: 64px;
+
+  /*Colors*/
+
+  /*Typography*/
+  --font-title: "Permanent Marker", cursive;
+  --font-text: "Montserrat", sans-serif;
+
+  --base-font-size: 16px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-size: 16px;
+  font-family: var(--font-text);
+}
+@media only screen and (max-width: 425px) {
+  body {
+    font-size: 14px;
+  }
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+:focus {
+  outline: none;
+}
+
+.main {
+  background-color: #000;
+}
